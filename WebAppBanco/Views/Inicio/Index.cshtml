@@ -1,0 +1,83 @@
+﻿@model WebAppBanco.Models.Usuario
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_LayoutBanco.cshtml";
+}
+
+<div class="row">
+    <div class="col-md-12 text-center">
+        &nbsp;
+        @*<p class="text-info" style="padding:5px 5px 5px 5px;">
+                <b>@ViewData["TittleApp"].ToString()</b>
+            </p>*@
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-12 text-center">
+        <p class="text-primary" style="padding:5px 5px 5px 5px;">
+            <b>INICIAR SESIÓN</b>
+        </p>
+    </div>
+</div>
+
+
+
+@using (Html.BeginForm("Index", "Inicio", FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+{
+    @Html.AntiForgeryToken()
+    <div class="row" style="padding: 0px 0px 0px 0px;">
+        <div class="col-md-4 col-md-offset-4" style="height: 170px; background-color: #1570BC;">
+            <center>
+                <div style="padding:10px 0px 0px 0px;">
+                    <table>
+                        <tr>
+                            <td style="height:50px;">
+                                <div class="input-group">
+                                    <span class="input-group-addon">
+                                        <span class="glyphicon glyphicon-user"></span>
+                                    </span>
+                                    @Html.TextBoxFor(m => m.login, new { @class = "form-control", @required = "true" })
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="height:50px;">
+                                <div class="input-group">
+                                    <span class="input-group-addon">
+                                        <span class="glyphicon glyphicon-lock"></span>
+                                    </span>
+                                    @Html.PasswordFor(m => m.contraseña, new { @class = "form-control", @required = "true" })
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="height:60px;">
+                                <input id="btnIngresar" class="btn btn-default col-md-12" type="submit" value="Ingresar" />
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+
+                <br />
+
+                @if (ViewData["msg"] != null)
+                {
+                    <div class="alert alert-warning" role="alert">
+                        <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+                        <span class="sr-only">Error:</span>
+                        @ViewData["msg"]
+                    </div>
+                }
+
+            </center>
+        </div>
+    </div>
+}
+
+
+<div class="row">
+    <div class="col-md-12" style="height: 220px;">
+    </div>
+</div>
+

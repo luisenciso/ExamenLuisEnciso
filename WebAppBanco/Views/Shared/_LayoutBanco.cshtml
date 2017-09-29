@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title</title>
+
+    @*<link href="~/Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/General.css" rel="stylesheet" type="text/css" />
+    <script src="~/Scripts/modernizr-2.8.3.js"></script>
+    <script src="~/Scripts/jquery-2.2.0.min.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    <script src="~/Scripts/holder.js"></script>
+    <script src="~/Scripts/jquery.validate.js"></script>
+    <script src="~/Scripts/Validate.Messages.Pe.js"></script>
+    <script src="~/Scripts/up.sip.common.js"></script>*@
+
+    <link href="~/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+    <script src="~/lib/jquery/dist/jquery.js"></script>
+
+
+    @RenderSection("scripts", required: false)
+</head>
+<body>
+    @using System.Configuration
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12" style="background-color:#1570BC; height: 90px;">
+                <div class="col-md-9" style="padding: 10px 0px 0px 0px;"><span class="texto-titulo"></span></div>
+                <div class="col-md-3" style="padding: 10px 0px 0px 0px;"><img src="~/Content/Images/logo.png" width="200" /></div>
+            </div>
+        </div>
+    </div>
+
+    <br />
+
+    <div class="container body-content">
+
+        @RenderBody()
+
+        <footer>
+            <div class="row" style="padding:50px 0px 0px 0px;">
+                <div class="col-md-12" style="background-color:#676767; height: 65px;">
+                    <p class="text-center" style="font-size:8pt;padding:9px 0px 0px 0px;color:white;">
+                        Examen<br />
+                    </p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+
+
+</body>
+</html>
