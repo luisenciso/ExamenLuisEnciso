@@ -30,5 +30,8 @@ namespace WebAppBanco.Controllers
         cookie.Value = authId;
         cookie.Expires = DateTime.Now.AddDays(1);
         Response.Cookies.Add(cookie);
+        
+
+
     }
 }
