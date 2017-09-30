@@ -1,0 +1,11 @@
+C:\TRAB\LuisEnciso-PruebaNET\LuisEnciso\WebAppBanco\bin\Debug\netcoreapp2.0\WebAppBanco.deps.json
+C:\TRAB\LuisEnciso-PruebaNET\LuisEnciso\WebAppBanco\bin\Debug\netcoreapp2.0\WebAppBanco.runtimeconfig.json
+C:\TRAB\LuisEnciso-PruebaNET\LuisEnciso\WebAppBanco\bin\Debug\netcoreapp2.0\WebAppBanco.runtimeconfig.dev.json
+C:\TRAB\LuisEnciso-PruebaNET\LuisEnciso\WebAppBanco\bin\Debug\netcoreapp2.0\WebAppBanco.dll
+C:\TRAB\LuisEnciso-PruebaNET\LuisEnciso\WebAppBanco\bin\Debug\netcoreapp2.0\WebAppBanco.pdb
+C:\TRAB\LuisEnciso-PruebaNET\LuisEnciso\WebAppBanco\obj\Debug\netcoreapp2.0\WebAppBanco.csprojResolveAssemblyReference.cache
+C:\TRAB\LuisEnciso-PruebaNET\LuisEnciso\WebAppBanco\obj\Debug\netcoreapp2.0\WebAppBanco.csproj.CoreCompileInputs.cache
+C:\TRAB\LuisEnciso-PruebaNET\LuisEnciso\WebAppBanco\obj\Debug\netcoreapp2.0\WebAppBanco.AssemblyInfoInputs.cache
+C:\TRAB\LuisEnciso-PruebaNET\LuisEnciso\WebAppBanco\obj\Debug\netcoreapp2.0\WebAppBanco.AssemblyInfo.cs
+C:\TRAB\LuisEnciso-PruebaNET\LuisEnciso\WebAppBanco\obj\Debug\netcoreapp2.0\WebAppBanco.dll
+C:\TRAB\LuisEnciso-PruebaNET\LuisEnciso\WebAppBanco\obj\Debug\netcoreapp2.0\WebAppBanco.pdb

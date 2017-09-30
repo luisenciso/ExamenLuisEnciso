@@ -1,0 +1,7 @@
+C:\TRAB\LuisEnciso-PruebaNET\LuisEnciso\Csharp\obj\Debug\Csharp.csprojResolveAssemblyReference.cache
+C:\TRAB\LuisEnciso-PruebaNET\LuisEnciso\Csharp\obj\Debug\Csharp.csproj.CoreCompileInputs.cache
+C:\TRAB\LuisEnciso-PruebaNET\LuisEnciso\Csharp\bin\Debug\c.exe.config
+C:\TRAB\LuisEnciso-PruebaNET\LuisEnciso\Csharp\bin\Debug\c.exe
+C:\TRAB\LuisEnciso-PruebaNET\LuisEnciso\Csharp\bin\Debug\c.pdb
+C:\TRAB\LuisEnciso-PruebaNET\LuisEnciso\Csharp\obj\Debug\c.exe
+C:\TRAB\LuisEnciso-PruebaNET\LuisEnciso\Csharp\obj\Debug\c.pdb
