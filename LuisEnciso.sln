@@ -9,7 +9,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebAppBanco", "WebAppBanco\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApiBanco", "WebApiBanco\WebApiBanco.csproj", "{9F1FB533-26CB-4256-AB01-FF4022DA89B9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Datos", "Datos\Datos.csproj", "{8AA670C7-DE0C-4CD3-970F-7867DA0C2A93}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Datos", "Datos\Datos.csproj", "{3AD9377D-D311-4B29-80B6-9B57611DDB01}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,10 +29,10 @@ Global
 		{9F1FB533-26CB-4256-AB01-FF4022DA89B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9F1FB533-26CB-4256-AB01-FF4022DA89B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9F1FB533-26CB-4256-AB01-FF4022DA89B9}.Release|Any CPU.Build.0 = Release|Any CPU
-		{8AA670C7-DE0C-4CD3-970F-7867DA0C2A93}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8AA670C7-DE0C-4CD3-970F-7867DA0C2A93}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{8AA670C7-DE0C-4CD3-970F-7867DA0C2A93}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{8AA670C7-DE0C-4CD3-970F-7867DA0C2A93}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3AD9377D-D311-4B29-80B6-9B57611DDB01}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3AD9377D-D311-4B29-80B6-9B57611DDB01}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3AD9377D-D311-4B29-80B6-9B57611DDB01}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3AD9377D-D311-4B29-80B6-9B57611DDB01}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

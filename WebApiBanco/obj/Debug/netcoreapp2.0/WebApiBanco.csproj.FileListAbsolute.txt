@@ -1,0 +1,13 @@
+C:\TRAB\sub\LuisEnciso\WebApiBanco\bin\Debug\netcoreapp2.0\WebApiBanco.deps.json
+C:\TRAB\sub\LuisEnciso\WebApiBanco\bin\Debug\netcoreapp2.0\WebApiBanco.runtimeconfig.json
+C:\TRAB\sub\LuisEnciso\WebApiBanco\bin\Debug\netcoreapp2.0\WebApiBanco.runtimeconfig.dev.json
+C:\TRAB\sub\LuisEnciso\WebApiBanco\bin\Debug\netcoreapp2.0\WebApiBanco.dll
+C:\TRAB\sub\LuisEnciso\WebApiBanco\bin\Debug\netcoreapp2.0\WebApiBanco.pdb
+C:\TRAB\sub\LuisEnciso\WebApiBanco\bin\Debug\netcoreapp2.0\Datos.dll
+C:\TRAB\sub\LuisEnciso\WebApiBanco\bin\Debug\netcoreapp2.0\Datos.pdb
+C:\TRAB\sub\LuisEnciso\WebApiBanco\obj\Debug\netcoreapp2.0\WebApiBanco.csprojResolveAssemblyReference.cache
+C:\TRAB\sub\LuisEnciso\WebApiBanco\obj\Debug\netcoreapp2.0\WebApiBanco.csproj.CoreCompileInputs.cache
+C:\TRAB\sub\LuisEnciso\WebApiBanco\obj\Debug\netcoreapp2.0\WebApiBanco.AssemblyInfoInputs.cache
+C:\TRAB\sub\LuisEnciso\WebApiBanco\obj\Debug\netcoreapp2.0\WebApiBanco.AssemblyInfo.cs
+C:\TRAB\sub\LuisEnciso\WebApiBanco\obj\Debug\netcoreapp2.0\WebApiBanco.dll
+C:\TRAB\sub\LuisEnciso\WebApiBanco\obj\Debug\netcoreapp2.0\WebApiBanco.pdb

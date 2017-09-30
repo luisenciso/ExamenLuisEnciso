@@ -1,0 +1,6 @@
+C:\TRAB\sub\LuisEnciso\Datos\bin\Debug\Datos.dll
+C:\TRAB\sub\LuisEnciso\Datos\bin\Debug\Datos.pdb
+C:\TRAB\sub\LuisEnciso\Datos\obj\Debug\Datos.csprojResolveAssemblyReference.cache
+C:\TRAB\sub\LuisEnciso\Datos\obj\Debug\Datos.csproj.CoreCompileInputs.cache
+C:\TRAB\sub\LuisEnciso\Datos\obj\Debug\Datos.dll
+C:\TRAB\sub\LuisEnciso\Datos\obj\Debug\Datos.pdb
