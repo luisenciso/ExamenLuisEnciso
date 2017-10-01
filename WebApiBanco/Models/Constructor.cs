@@ -19,6 +19,7 @@ namespace WebApiBanco.Models
             Banco ojbbanco = new Banco();
             ojbbanco.Direccion = "Av La marina 1245";
             ojbbanco.Nombre = "Efectiva";
+            
 
             //Logueo
             Rol rol1 = new Rol();
@@ -35,15 +36,18 @@ namespace WebApiBanco.Models
 
             Perfil perfil1 = new Perfil();
             perfil1.Nombre = "Operador1";
+            perfil1.roles = new List<Rol>();
             perfil1.roles.Add(rol1);
             perfil1.roles.Add(rol2);
 
             Perfil perfil2 = new Perfil();
             perfil2.Nombre = "Operador2";
+            perfil2.roles = new List<Rol>();
             perfil2.roles.Add(rol3);
 
             Perfil perfil3 = new Perfil();
             perfil3.Nombre = "Administrador";
+            perfil3.roles = new List<Rol>();
             perfil3.roles.Add(rol1);
             perfil3.roles.Add(rol2);
             perfil3.roles.Add(rol3);
@@ -51,6 +55,15 @@ namespace WebApiBanco.Models
             Usuario user1 = new Usuario("Manuel", "Contreras", "user001", "user001", perfil1);
             Usuario user2 = new Usuario("Pedro", "Ventura", "user002", "user002", perfil2);
             Usuario user3 = new Usuario("Juan", "Panta", "user003", "user003", perfil3);
+
+
+
+            //
+            banco = ojbbanco;
+            usuarios = new List<Usuario>();
+            usuarios.Add(user1);
+            usuarios.Add(user2);
+            usuarios.Add(user3);
 
         }
 

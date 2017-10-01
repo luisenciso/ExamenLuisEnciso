@@ -15,3 +15,8 @@ C:\TRAB\sub\LuisEnciso\WebAppBanco\obj\Debug\netcoreapp2.0\WebAppBanco.AssemblyI
 C:\TRAB\sub\LuisEnciso\WebAppBanco\obj\Debug\netcoreapp2.0\WebAppBanco.AssemblyInfo.cs
 C:\TRAB\sub\LuisEnciso\WebAppBanco\obj\Debug\netcoreapp2.0\WebAppBanco.dll
 C:\TRAB\sub\LuisEnciso\WebAppBanco\obj\Debug\netcoreapp2.0\WebAppBanco.pdb
+C:\TRAB\sub\LuisEnciso\WebAppBanco\bin\Debug\netcoreapp2.0\WebAppBanco.deps.json
+C:\TRAB\sub\LuisEnciso\WebAppBanco\bin\Debug\netcoreapp2.0\WebAppBanco.runtimeconfig.json
+C:\TRAB\sub\LuisEnciso\WebAppBanco\bin\Debug\netcoreapp2.0\WebAppBanco.runtimeconfig.dev.json
+C:\TRAB\sub\LuisEnciso\WebAppBanco\bin\Debug\netcoreapp2.0\WebAppBanco.dll
+C:\TRAB\sub\LuisEnciso\WebAppBanco\bin\Debug\netcoreapp2.0\WebAppBanco.pdb
