@@ -41,11 +41,21 @@ namespace WebAppBanco.Controllers
                 HttpResponseMessage res = await client.PostAsync("api/login/", a);
                 if (res.IsSuccessStatusCode)
                 {
-                    var EmpResponse = res.Content.ReadAsStringAsync().Result;
+                    String EmpResponse = res.Content.ReadAsStringAsync().Result;
+                    if (EmpResponse.IndexOf("OK") > 0)
+                    {
+                        return RedirectToAction("Index", "Principal");
+                    }
+                    else
+                    {
+                        return RedirectToAction("Index", "Inicio");
+                    }
                 }
-
+                else
+                {
+                    return RedirectToAction("Index", "Inicio");
+                }
             }
-            return View(model);
         }
 
 

@@ -12,16 +12,18 @@ namespace WebApiBanco.Controllers
     public class LoginController : Controller
     {
 
-        Models.ConstructorContext conscontext;
-
+        Datos.Models.ConstructorContext conscontext;
 
         // POST api/values
         [HttpPost]
         public string Post(string vusuario,string vcontrasenia)
         {
             string result = string.Empty;
-            conscontext = new Models.ConstructorContext();            
-            Models.Seguridad.Usuario  vuser = Models.ConstructorContext.usuarios.Find(x => x.usuario == vusuario && x.Contrasenia == vcontrasenia);
+            Datos.Models.Seguridad.Sesion ses = new Datos.Models.Seguridad.Sesion();
+            conscontext = new Datos.Models.ConstructorContext();            
+            Datos.Models.Seguridad.Usuario  vuser = Datos.Models.ConstructorContext.usuarios.Find(x => x.usuario == vusuario && x.Contrasenia == vcontrasenia);
+            ses.user = vuser;
+            ses.roles = vuser.perfil.roles;
             if (vuser != null)
             {
                 result = "OK";
@@ -29,7 +31,7 @@ namespace WebApiBanco.Controllers
             else
             {
                 result = "NO EXISTE";
-            }           
+            }            
             return result;
         }
 

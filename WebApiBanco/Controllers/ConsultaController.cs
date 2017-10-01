@@ -10,9 +10,7 @@ namespace WebApiBanco.Controllers
 {
     [Route("api/[controller]")]
     public class ConsultaController : Controller
-    {
-
-        private Models.ConstructorContext conscontext = new Models.ConstructorContext();
+    {        
         // GET: api/values
         [HttpGet]
         public IEnumerable<string> Get()
