@@ -20,3 +20,5 @@ C:\TRAB\sub\LuisEnciso\WebAppBanco\bin\Debug\netcoreapp2.0\WebAppBanco.runtimeco
 C:\TRAB\sub\LuisEnciso\WebAppBanco\bin\Debug\netcoreapp2.0\WebAppBanco.runtimeconfig.dev.json
 C:\TRAB\sub\LuisEnciso\WebAppBanco\bin\Debug\netcoreapp2.0\WebAppBanco.dll
 C:\TRAB\sub\LuisEnciso\WebAppBanco\bin\Debug\netcoreapp2.0\WebAppBanco.pdb
+C:\TRAB\sub\LuisEnciso\WebAppBanco\bin\Debug\netcoreapp2.0\Datos.dll
+C:\TRAB\sub\LuisEnciso\WebAppBanco\bin\Debug\netcoreapp2.0\Datos.pdb

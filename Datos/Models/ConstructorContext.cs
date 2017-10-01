@@ -34,7 +34,7 @@ namespace Datos.Models
             rol2.Pagina = "index";
 
             Rol rol3 = new Rol();
-            rol3.Nombre = "Orden Pago";
+            rol3.Nombre = "OrdenPago";
             rol3.Display = "Orden de Pago";
             rol3.Pagina = "index";
 

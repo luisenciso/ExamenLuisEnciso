@@ -11,9 +11,10 @@ namespace WebAppBanco.Controllers
     public class PrincipalController : Controller
     {
         // GET: /<controller>/
-        public IActionResult Index()
+        public IActionResult Index(Datos.Models.Seguridad.Sesion ses)
         {
-            return View();
+            ses = HttpContext.Session.Get<Datos.Models.Seguridad.Sesion>("sesion");
+            return View(ses);
         }
     }
 }

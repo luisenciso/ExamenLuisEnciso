@@ -16,23 +16,24 @@ namespace WebApiBanco.Controllers
 
         // POST api/values
         [HttpPost]
-        public string Post(string vusuario,string vcontrasenia)
+        public Datos.Models.Seguridad.Sesion Post(string vusuario,string vcontrasenia)
         {
-            string result = string.Empty;
             Datos.Models.Seguridad.Sesion ses = new Datos.Models.Seguridad.Sesion();
             conscontext = new Datos.Models.ConstructorContext();            
             Datos.Models.Seguridad.Usuario  vuser = Datos.Models.ConstructorContext.usuarios.Find(x => x.usuario == vusuario && x.Contrasenia == vcontrasenia);
-            ses.user = vuser;
-            ses.roles = vuser.perfil.roles;
             if (vuser != null)
             {
-                result = "OK";
+                ses.msg = "OK";
+                ses.user = vuser;
+                ses.roles = vuser.perfil.roles;
             }
             else
             {
-                result = "NO EXISTE";
+                ses.msg = "NO EXISTE";
+                ses.user = null;
+                ses.roles = null;
             }            
-            return result;
+            return ses;
         }
 
 

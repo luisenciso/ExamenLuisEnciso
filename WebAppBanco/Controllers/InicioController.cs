@@ -7,6 +7,8 @@ using Microsoft.AspNetCore.Mvc;
 using System.Net.Http;
 using System.Net.Http.Headers;
 
+using Newtonsoft.Json;
+
 // For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
 namespace WebAppBanco.Controllers
@@ -41,7 +43,14 @@ namespace WebAppBanco.Controllers
                 HttpResponseMessage res = await client.PostAsync("api/login/", a);
                 if (res.IsSuccessStatusCode)
                 {
-                    String EmpResponse = res.Content.ReadAsStringAsync().Result;
+                    var JsonResponse = res.Content.ReadAsStringAsync().Result;
+                    Datos.Models.Seguridad.Sesion objsesion =JsonConvert.DeserializeObject< Datos.Models.Seguridad.Sesion>(JsonResponse);
+                    //TempData["Sesion"] = objsesion;
+                    HttpContext.Session.Set<Datos.Models.Seguridad.Sesion>("sesion", objsesion);
+                    
+                    return RedirectToAction("Index", "Principal");
+
+                    /*
                     if (EmpResponse.IndexOf("OK") > 0)
                     {
                         return RedirectToAction("Index", "Principal");
@@ -50,6 +59,7 @@ namespace WebAppBanco.Controllers
                     {
                         return RedirectToAction("Index", "Inicio");
                     }
+                    */
                 }
                 else
                 {

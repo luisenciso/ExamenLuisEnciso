@@ -1,12 +1,20 @@
-﻿
+﻿@model Datos.Models.Seguridad.Sesion
+
 @{
     ViewData["Title"] = "Index";
     Layout = "~/Views/Shared/_LayoutBanco.cshtml";
 }
 
-<h2>Menu</h2>
+<h2>Principal</h2>
 
-<a href="@Url.Action("Register", "Account")">Register</a>
+<p>
 
-<a asp-controller="Account" asp-action="Register">Register</a>
+    @foreach (Datos.Models.Seguridad.Rol item in Model.roles)
+    {
+        <a href="@Url.Action(item.Pagina, item.Nombre)">@item.Display</a> <br />
+    }
+
+</p>
+
+
 
