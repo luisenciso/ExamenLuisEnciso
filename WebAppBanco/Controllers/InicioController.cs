@@ -43,23 +43,17 @@ namespace WebAppBanco.Controllers
                 HttpResponseMessage res = await client.PostAsync("api/login/", a);
                 if (res.IsSuccessStatusCode)
                 {
-                    var JsonResponse = res.Content.ReadAsStringAsync().Result;
+                    var JsonResponse = res.Content.ReadAsStringAsync().Result;                    
                     Datos.Models.Seguridad.Sesion objsesion =JsonConvert.DeserializeObject< Datos.Models.Seguridad.Sesion>(JsonResponse);
-                    //TempData["Sesion"] = objsesion;
-                    HttpContext.Session.Set<Datos.Models.Seguridad.Sesion>("sesion", objsesion);
-                    
-                    return RedirectToAction("Index", "Principal");
-
-                    /*
-                    if (EmpResponse.IndexOf("OK") > 0)
+                    if (objsesion.msg.Equals("OK"))
                     {
+                        HttpContext.Session.Set<Datos.Models.Seguridad.Sesion>("sesion", objsesion);
                         return RedirectToAction("Index", "Principal");
                     }
                     else
                     {
                         return RedirectToAction("Index", "Inicio");
-                    }
-                    */
+                    }                                                                            
                 }
                 else
                 {
