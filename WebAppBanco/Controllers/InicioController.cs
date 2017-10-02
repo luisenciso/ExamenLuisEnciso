@@ -6,7 +6,6 @@ using Microsoft.AspNetCore.Mvc;
 
 using System.Net.Http;
 using System.Net.Http.Headers;
-
 using Newtonsoft.Json;
 
 // For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
@@ -21,8 +20,6 @@ namespace WebAppBanco.Controllers
         // GET: /<controller>/
         public IActionResult Index()
         {
-
-
             return View();
         }
 

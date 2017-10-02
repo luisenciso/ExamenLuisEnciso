@@ -14,6 +14,15 @@ namespace Datos.Models
         public DateTime FechaRegistro { get; set; }
         public List<Sucursal> Sucursales = new List<Sucursal>();
 
+        public List<OrdenPago> OrdenPagos()
+        {
+            List<OrdenPago> objpgs = new List<OrdenPago>();
+            foreach (Sucursal item in Sucursales)
+            {
+                objpgs.AddRange(item.OrdenesPago);
+            }
+            return objpgs;
+        }
 
         public Banco()
         {
@@ -29,7 +38,7 @@ namespace Datos.Models
                 Moneda = TipoMoneda.Soles,
                 Estado = EstadoPago.Pagada,
                 FechaRegistro = DateTime.Parse("04/06/2017"),
-                sucursal = nueva1
+                sucursal = nueva1.Nombre
             });
             ordenesA.Add(new OrdenPago()
             {
@@ -37,7 +46,7 @@ namespace Datos.Models
                 Moneda = TipoMoneda.Soles,
                 Estado = EstadoPago.Fallida,
                 FechaRegistro = DateTime.Parse("04/02/2017"),
-                sucursal = nueva1
+                sucursal = nueva1.Nombre
             });
             ordenesA.Add(new OrdenPago()
             {
@@ -45,7 +54,7 @@ namespace Datos.Models
                 Moneda = TipoMoneda.Soles,
                 Estado = EstadoPago.Anulada,
                 FechaRegistro = DateTime.Parse("04/01/2017"),
-                sucursal = nueva1
+                sucursal = nueva1.Nombre
             });
             ordenesA.Add(new OrdenPago()
             {
@@ -53,7 +62,7 @@ namespace Datos.Models
                 Moneda = TipoMoneda.Dolares,
                 Estado = EstadoPago.Pagada,
                 FechaRegistro = DateTime.Parse("10/02/2017"),
-                sucursal = nueva1
+                sucursal = nueva1.Nombre
             });
             ordenesA.Add(new OrdenPago()
             {
@@ -61,7 +70,7 @@ namespace Datos.Models
                 Moneda = TipoMoneda.Dolares,
                 Estado = EstadoPago.Fallida,
                 FechaRegistro = DateTime.Parse("09/05/2017"),
-                sucursal = nueva1
+                sucursal = nueva1.Nombre
             });
             ordenesA.Add(new OrdenPago()
             {
@@ -69,7 +78,7 @@ namespace Datos.Models
                 Moneda = TipoMoneda.Dolares,
                 Estado = EstadoPago.Declinada,
                 FechaRegistro = DateTime.Parse("07/06/2017"),
-                sucursal = nueva1
+                sucursal = nueva1.Nombre
             });
             nueva1.OrdenesPago = ordenesA;
 
@@ -92,7 +101,7 @@ namespace Datos.Models
                 Moneda = TipoMoneda.Dolares,
                 Estado = EstadoPago.Pagada,
                 FechaRegistro = DateTime.Parse("07/02/2017"),
-                sucursal = nueva2
+                sucursal = nueva2.Nombre
             });
             ordenesB.Add(new OrdenPago()
             {
@@ -100,7 +109,7 @@ namespace Datos.Models
                 Moneda = TipoMoneda.Dolares,
                 Estado = EstadoPago.Declinada,
                 FechaRegistro = DateTime.Parse("07/07/2017"),
-                sucursal = nueva2
+                sucursal = nueva2.Nombre
             });
             ordenesB.Add(new OrdenPago()
             {
@@ -108,7 +117,7 @@ namespace Datos.Models
                 Moneda = TipoMoneda.Dolares,
                 Estado = EstadoPago.Pagada,
                 FechaRegistro = DateTime.Parse("02/06/2017"),
-                sucursal = nueva2
+                sucursal = nueva2.Nombre
             });
             ordenesB.Add(new OrdenPago()
             {
@@ -116,7 +125,7 @@ namespace Datos.Models
                 Moneda = TipoMoneda.Dolares,
                 Estado = EstadoPago.Fallida,
                 FechaRegistro = DateTime.Parse("03/05/2017"),
-                sucursal = nueva2
+                sucursal = nueva2.Nombre
             });
             ordenesB.Add(new OrdenPago()
             {
@@ -124,7 +133,7 @@ namespace Datos.Models
                 Moneda = TipoMoneda.Dolares,
                 Estado = EstadoPago.Anulada,
                 FechaRegistro = DateTime.Parse("05/05/2017"),
-                sucursal = nueva2
+                sucursal = nueva2.Nombre
             });
             ordenesB.Add(new OrdenPago()
             {
@@ -132,7 +141,7 @@ namespace Datos.Models
                 Moneda = TipoMoneda.Soles,
                 Estado = EstadoPago.Pagada,
                 FechaRegistro = DateTime.Parse("01/06/2017"),
-                sucursal = nueva2
+                sucursal = nueva2.Nombre
             });
             ordenesB.Add(new OrdenPago()
             {
@@ -140,7 +149,7 @@ namespace Datos.Models
                 Moneda = TipoMoneda.Dolares,
                 Estado = EstadoPago.Fallida,
                 FechaRegistro = DateTime.Parse("06/09/2017"),
-                sucursal = nueva2
+                sucursal = nueva2.Nombre
             });
             ordenesB.Add(new OrdenPago()
             {
@@ -148,11 +157,12 @@ namespace Datos.Models
                 Moneda = TipoMoneda.Soles,
                 Estado = EstadoPago.Pagada,
                 FechaRegistro = DateTime.Parse("09/09/2017"),
-                sucursal = nueva2
+                sucursal = nueva2.Nombre
             });
             nueva2.OrdenesPago = ordenesB;
 
-
+            Sucursales.Add(nueva1);
+            Sucursales.Add(nueva2);
         }
     }
 }

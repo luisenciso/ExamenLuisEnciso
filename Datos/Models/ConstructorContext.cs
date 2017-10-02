@@ -12,6 +12,7 @@ namespace Datos.Models
     {
         public static Banco banco { get; set; }
         public static List<Usuario> usuarios { get; set; }
+        public static List<OrdenPago> ordenpagos { get; set; }
 
         public ConstructorContext()
         {
@@ -21,6 +22,9 @@ namespace Datos.Models
             ojbbanco.Direccion = "Av La marina 1245";
             ojbbanco.Nombre = "Efectiva";
 
+            ConstructorContext.ordenpagos = new List<OrdenPago>();
+
+            
 
             //Logueo
             Rol rol1 = new Rol();

@@ -12,7 +12,7 @@ namespace Datos.Models
         public TipoMoneda Moneda { get; set; }
         public EstadoPago Estado { get; set; }
         public DateTime FechaRegistro { get; set; }
-        public Sucursal sucursal { get; set; }
+        public String sucursal { get; set; }
     }
 
     public enum EstadoPago
